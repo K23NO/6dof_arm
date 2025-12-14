@@ -1,0 +1,42 @@
+#!/usr/bin/env python3
+import rclpy
+from rclpy.node import Node
+from std_msgs.msg import Int32MultiArray
+
+class FeedbackMonitor(Node):
+    def __init__(self):
+        super().__init__('feedback_monitor')
+        self.subscription = self.create_subscription(
+            Int32MultiArray,
+            'potentiometer_feedback',
+            self.feedback_callback,
+            10)
+        
+        self.raw_values = [0] * 6
+        self.angle_values = [0.0] * 6
+        self.counter = 0
+
+    def feedback_callback(self, msg):
+        self.raw_values = msg.data
+        self.angle_values = [val / 100.0 for val in self.raw_values]
+        self.counter += 1
+        
+        # Mostrar cada 10 mensajes para no saturar
+        if self.counter % 10 == 0:
+            display = " | ".join([f"J{i+1}: {ang:6.1f}°" for i, ang in enumerate(self.angle_values)])
+            self.get_logger().info(display)
+            self.counter = 0
+
+def main():
+    rclpy.init()
+    node = FeedbackMonitor()
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()

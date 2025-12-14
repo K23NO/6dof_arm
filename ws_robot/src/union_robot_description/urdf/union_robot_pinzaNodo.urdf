@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="union_robot_pinzaNodo">
+    <link name="base_link">
+        <inertial>
+            <origin xyz="0.03426916557558085 -0.06254336220507926 0.07555118540058695" rpy="0.0 0.0 0.0" />
+            <mass value="0.5761092619103262" />
+            <inertia ixx="0.0004916393688886448" iyy="0.0005016815044919009" izz="0.0004146582104320707" ixy="-4.750956367428807e-07" iyz="-1.6400183531703472e-07" ixz="0.00010333799461570274" />
+        </inertial>
+        <visual name="base_link_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="package://union_robot_description/meshes/base_link.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="base_link_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="package://union_robot_description/meshes/base_link.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="link_1">
+        <inertial>
+            <origin xyz="-0.00023146591323472743 -0.006196515797733522 0.00900558516822306" rpy="0.0 -0.0 0.0" />
+            <mass value="0.2920074193276514" />
+            <inertia ixx="5.6974903440320385e-05" iyy="5.779781879667635e-05" izz="9.028826703870257e-05" ixy="-2.5850558200049122e-06" iyz="1.4702471805997167e-06" ixz="6.202530811053389e-08" />
+        </inertial>
+        <visual name="link_1_visual">
+            <origin xyz="-0.9725101079405449 0.8909852672181381 -1.1027198766015625" rpy="7.612357902935896e-19 3.920598689018956e-19 0.03950442199253035" />
+            <geometry>
+                <mesh filename="package://union_robot_description/meshes/link_1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="link_1_collision">
+            <origin xyz="-0.9725101079405449 0.8909852672181381 -1.1027198766015625" rpy="7.612357902935896e-19 3.920598689018956e-19 0.03950442199253035" />
+            <geometry>
+                <mesh filename="package://union_robot_description/meshes/link_1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="link_2">
+        <inertial>
+            <origin xyz="0.002623063257130219 0.052057232627239894 0.024031553637593" rpy="0.0 -9.622294280808852e-19 0.0" />
+            <mass value="0.11509832437912562" />
+            <inertia ixx="0.00019521196768038576" iyy="8.303924576446029e-05" izz="0.00012507426230614211" ixy="-1.9115410474860383e-06" iyz="2.8816074173950005e-06" ixz="-6.208807658524118e-06" />
+        </inertial>
+        <visual name="link_2_visual">
+            <origin xyz="0.6121566431044781 -0.7245944117506241 0.5597941171563283" rpy="1.6356872992608087 -0.0753705342296691 3.140405523684109" />
+            <geometry>
+                <mesh filename="package://union_robot_description/meshes/link_2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="link_2_collision">
+            <origin xyz="0.6121566431044781 -0.7245944117506241 0.5597941171563283" rpy="1.6356872992608087 -0.0753705342296691 3.140405523684109" />
+            <geometry>
+                <mesh filename="package://union_robot_description/meshes/link_2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="link_4">
+        <inertial>
+            <origin xyz="-0.0038952857074156457 0.028701936956658507 0.03462773040116499" rpy="0.0 6.938893903907228e-18 0.0" />
+            <mass value="0.3027267902973336" />
+            <inertia ixx="0.0001359512508103891" iyy="7.609200069225015e-05" izz="8.347062696373585e-05" ixy="-7.719440659762945e-07" iyz="-3.7513694977115072e-06" ixz="6.098666822934256e-06" />
+        </inertial>
+        <visual name="link_4_visual">
+            <origin xyz="0.3441339316315184 0.34624562770776457 -0.3942992741461424" rpy="2.1943060887431827 -1.4684073537559277 -2.1646603646003815" />
+            <geometry>
+                <mesh filename="package://union_robot_description/meshes/link_4.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="link_4_collision">
+            <origin xyz="0.3441339316315184 0.34624562770776457 -0.3942992741461424" rpy="2.1943060887431827 -1.4684073537559277 -2.1646603646003815" />
+            <geometry>
+                <mesh filename="package://union_robot_description/meshes/link_4.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="link_3">
+        <inertial>
+            <origin xyz="0.07473989054209274 -0.002948208489227646 -0.02385327695209873" rpy="0.0 -2.254532458074769e-36 0.0" />
+            <mass value="0.6844061247362784" />
+            <inertia ixx="0.00014500281785590196" iyy="0.0027393000503743133" izz="0.002649502399498777" ixy="1.0285694267897066e-05" iyz="-2.2485781529883387e-06" ixz="-0.00014594190639030953" />
+        </inertial>
+        <visual name="link_3_visual">
+            <origin xyz="0.4646159586140998 0.18780820959039152 -0.2695550943408202" rpy="0.057906920815988694 -0.03480056847221125 -1.5728768441067644" />
+            <geometry>
+                <mesh filename="package://union_robot_description/meshes/link_3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="link_3_collision">
+            <origin xyz="0.4646159586140998 0.18780820959039152 -0.2695550943408202" rpy="0.057906920815988694 -0.03480056847221125 -1.5728768441067644" />
+            <geometry>
+                <mesh filename="package://union_robot_description/meshes/link_3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="PinzaBase">
+        <inertial>
+            <origin xyz="0.010490689269737641 0.02721691412737723 -0.02227322770720713" rpy="-6.938893903907227e-18 -1.0408340855860843e-17 0.0" />
+            <mass value="0.28020081436389177" />
+            <inertia ixx="6.303710390183343e-05" iyy="9.383808918319999e-05" izz="5.926030599167116e-05" ixy="-8.292809289110208e-06" iyz="1.8348197500805398e-06" ixz="1.0029408308534988e-05" />
+        </inertial>
+        <visual name="PinzaBase_visual">
+            <origin xyz="0.8950893737698631 1.7516911291503983 -2.3437466069736463" rpy="-0.23788712527252495 -0.010111703527214128 -1.2942112249281628" />
+            <geometry>
+                <mesh filename="package://union_robot_description/meshes/PinzaBase.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="PinzaBase_collision">
+            <origin xyz="0.8950893737698631 1.7516911291503983 -2.3437466069736463" rpy="-0.23788712527252495 -0.010111703527214128 -1.2942112249281628" />
+            <geometry>
+                <mesh filename="package://union_robot_description/meshes/PinzaBase.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="PinzaIzquier">
+        <inertial>
+            <origin xyz="-0.00360969457314452 -0.003963023305665381 0.02977901264336264" rpy="1.387778780781446e-17 2.168404344971009e-19 1.3552527156068805e-20" />
+            <mass value="0.022835696581944787" />
+            <inertia ixx="1.7791896907669424e-05" iyy="1.7485213274090282e-05" izz="1.1070873527535675e-06" ixy="-2.1576278196199178e-07" iyz="1.2427911441762142e-06" ixz="2.532634390568359e-06" />
+        </inertial>
+        <visual name="PinzaIzquier_visual">
+            <origin xyz="-2.2705488357334573 1.1830043786312245 1.7699500207222736" rpy="1.2458807756642598 1.1767269603063657 1.2923104850473264" />
+            <geometry>
+                <mesh filename="package://union_robot_description/meshes/PinzaIzquier.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="PinzaIzquier_collision">
+            <origin xyz="-2.2705488357334573 1.1830043786312245 1.7699500207222736" rpy="1.2458807756642598 1.1767269603063657 1.2923104850473264" />
+            <geometry>
+                <mesh filename="package://union_robot_description/meshes/PinzaIzquier.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="PinzaDerech">
+        <inertial>
+            <origin xyz="-0.001671854361262657 -0.008240574713878193 0.029353453428458246" rpy="0.0 -2.168404344971009e-19 1.3552527156068805e-20" />
+            <mass value="0.022801010196669143" />
+            <inertia ixx="1.8422557262731393e-05" iyy="1.6902832775795363e-05" izz="1.8140179411289664e-06" ixy="-4.118476433125812e-07" iyz="4.321419836382856e-06" ixz="1.4216048221166864e-06" />
+        </inertial>
+        <visual name="PinzaDerech_visual">
+            <origin xyz="-2.3678289036927667 2.113856677509141 1.6689229958819873" rpy="0.4603037279066735 1.4996912761702432 0.44045603220510077" />
+            <geometry>
+                <mesh filename="package://union_robot_description/meshes/PinzaDerech.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="PinzaDerech_collision">
+            <origin xyz="-2.3678289036927667 2.113856677509141 1.6689229958819873" rpy="0.4603037279066735 1.4996912761702432 0.44045603220510077" />
+            <geometry>
+                <mesh filename="package://union_robot_description/meshes/PinzaDerech.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint_1" type="revolute">
+        <origin xyz="0.01550063 -0.060415989999999996 0.11637161000000001" rpy="0.0 -0.0 0.0" />
+        <parent link="base_link" />
+        <child link="link_1" />
+        <axis xyz="0.0 0.0 1.0" />
+        <limit lower="-1.61" upper="1.56" effort="1000.0" velocity="1.0" />
+        <!-- MEFY MODELO zz-->
+        <!--<limit effort="1000.0" lower="1.56" upper="4.68" velocity="1.0" />-->
+    </joint>
+    <joint name="joint_2" type="continuous">
+        <origin xyz="-0.00943212 -0.03299828 0.009290009999999996" rpy="1.6007852192249366 0.0005247724399227596 3.1241007910041567" />
+        <parent link="link_1" />
+        <child link="link_2" />
+        <axis xyz="0.03947625046022882 -2.2511566407437678e-06 0.9992209383347277" />
+        <!--<limit effort="1000.0" lower="0.0" upper="3.12" velocity="1.0" />-->
+    </joint>
+    <joint name="joint_3" type="revolute">
+        <origin xyz="0.0010465124755054023 0.09976914088710054 -0.00558595713362541" rpy="3.1115888836146315 0.031492404588699056 -0.00042000949635544454" />
+        <parent link="link_2" />
+        <child link="link_3" />
+        <axis xyz="-0.05780208184176218 0.034856000000000005 0.9977189037237685" />
+        <limit lower="-2.617994" upper="0.523599" effort="1000.0" velocity="1.0" />
+
+        <!--<limit effort="1000.0" lower="-1.7" upper="1.7" velocity="1.0" />-->
+
+    </joint>
+    <joint name="joint_4" type="continuous">
+        <origin xyz="0.14827421552582223 -0.0025098799999999956 0.008677851639116323" rpy="-1.5217456708100712 0.016782500439864196 -0.056197914232415914" />
+        <parent link="link_3" />
+        <child link="link_4" />
+        <axis xyz="0.02358227087604743 0.9993529038150621 -0.02717315906794857" />
+        <!--<limit effort="1000.0" lower="-1.7" upper="1.7" velocity="1.0" />-->   
+    </joint>
+    <joint name="joint_5" type="continuous">
+        <origin xyz="-0.007803452803396223 0.039140348218358045 0.059412389445543605" rpy="1.439517725760459 0.33272291262178394 1.3383016114408999" />
+        <parent link="link_4" />
+        <child link="PinzaBase" />
+        <axis xyz="0.25257978210415516 -0.9674488638848753 0.015664163753025026" />
+        <!--<limit effort="1000.0" lower="-3.17" upper="0.0" velocity="1.0" />-->
+
+    </joint>
+    <joint name="joint_6" type="continuous">
+        <origin xyz="0.006271556202666409 0.027758964828525308 0.001361506559804475" rpy="-1.3404193993022924 -1.3708160137592054 0.008780321096943149" />
+        <parent link="PinzaBase" />
+        <child link="PinzaDerech" />
+        <axis xyz="-0.9977548734001893 0.020811250130947766 -0.06365030322127199" />
+        <!--<limit effort="1000.0" lower="-0.5" upper="0.0" velocity="1.0" />-->
+    </joint>
+    <joint name="joint_7" type="continuous">
+        <origin xyz="-0.017752440686809458 0.02076658645022036 0.007038371240389037" rpy="-1.3403943572722685 -1.3708152603708752 0.00876380199453468" />
+        <parent link="PinzaBase" />
+        <child link="PinzaIzquier" />
+        <axis xyz="-0.9977556549677461 0.020802496323660265 -0.06365135951877947" />
+        <!--<limit effort="1000.0" lower="0" upper="-0.5" velocity="1.0" />-->
+        <mimic joint="joint_6" multiplier="-1.0" offset="0.0" />
+    </joint>
+   
+</robot>

@@ -1,0 +1,13 @@
+<launch>
+  <arg name="model" default="$(find union_robot_description)/urdf/union_robot_pinzaNodo.urdf"/>
+  <param name="robot_description" textfile="$(arg model)"/>
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -model union_robot"/>
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="paused" value="true"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="headless" value="false"/>
+    <arg name="debug" value="false"/>
+  </include>
+
+</launch>
