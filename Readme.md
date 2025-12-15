@@ -54,4 +54,3 @@ ros2 launch lab1 bringup_sliders_servos_sim.launch.py
 ```bash
 ros2 launch lab1 nodo_hola.py
 ```
-
